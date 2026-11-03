@@ -1,0 +1,54 @@
+name: Xiaofeiyu
+
+options:
+  bundleIdPrefix: com.xiaofeiyu
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+settings:
+  base:
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.9"
+    IPHONEOS_DEPLOYMENT_TARGET: "18.0"
+
+schemes:
+  Xiaofeiyu:
+    build:
+      targets:
+        Xiaofeiyu: all
+    run:
+      config: Debug
+    archive:
+      config: Release
+
+targets:
+  Xiaofeiyu:
+    type: application
+    platform: iOS
+    sources:
+      - path: Xiaofeiyu
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: 小肥鱼
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIUserInterfaceStyle: Light
+        ITSAppUsesNonExemptEncryption: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.xiaofeiyu.app
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGNING_ALLOWED: "NO"
+        CODE_SIGNING_REQUIRED: "NO"
+        CODE_SIGN_IDENTITY: ""
+        ENABLE_USER_SCRIPT_SANDBOXING: "NO"
+        SWIFT_EMIT_LOC_STRINGS: "NO"
